@@ -18,5 +18,5 @@ println("Estimating the value for pi with Monte Carlo integration.\n")
         end
     end
 end
-println("\nFinal estimate: $estimate after $(i/1_000_000_000) billion iterations.")
+println("\nFinal estimate: $estimate after $(MAX_ITER/1_000_000_000) billion iterations.")
 end
