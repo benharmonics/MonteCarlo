@@ -1,5 +1,5 @@
 # MonteCarlo
-Monte Carlo simulations to estimate the value of pi in several languages (Starting with C)
+Monte Carlo simulations to estimate the value of pi in several languages (Includes C, Julia)
 
 <h3>piestimate.c</h3>
 
@@ -10,3 +10,17 @@ Monte Carlo simulations to estimate the value of pi in several languages (Starti
 <p>to see if you have gcc installed. If this doesn't error, cd into the directory where you have piestimate.c and compile with</p>
 
 <code>gcc piestimate.c -o piestimate</code>
+
+<h3>piestimate.jl</h3>
+<p>Note that you will need the Julia REPL to run this script. In the terminal, check with</p>
+
+<code>julia --version</code>
+
+<p>to see if you have Julia installed. If you do, simply run the file with</p>
+
+<code>julia piestimate.jl</code>
+
+<p>while in the directory where the file is located.<br>
+Note how the speed boost, even compared to the parallel program in C!</p>
+
+
