@@ -11,6 +11,11 @@ Monte Carlo simulations to estimate the value of pi in several languages (Includ
 
 <code>gcc piestimate.c -o piestimate</code>
 
+<h3>piestimate.py</h3>
+
+<p>With Python installed, enter the terminal, cd to the directory in which the file is located and simply run <code>python piestimate.py</code>.<br>
+  Note that Python is <i><b>much</b></i> slower than C and especially Julia. Thus, the number of iterations is  much lower.</p>
+
 <h3>piestimate.jl</h3>
 <p>Note that you will need the Julia REPL to run this script. In the terminal, check with</p>
 
