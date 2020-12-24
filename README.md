@@ -1,7 +1,8 @@
 # MonteCarlo
-Monte Carlo simulations to estimate the value of pi in several languages (Includes C, Julia)
+Monte Carlo simulations to estimate the value of pi in several languages (Includes C, Julia, Python)
 
-<h3><i>What is an iteration?</i></h3>
+<h3><i><b>What is Monte Carlo?</b></i></h3>
+<h4><i>Using Statistics in Numerical Analysis</h4></i>
 
 <p>Imagine you are looking at the first quadrant of the XY plane; that is, where X>0 and Y>0. We are going to focus on the first unit square of the first quadrant; that is, 0<=X<=1 and 0<=Y<=1.</p>
 <p>Now, imagine the first quadrant of the unit circle inscribed on this first unit square: the edge of the circle starts at the point (1,0), and sweeps across to the point (0,1), of course maintaining the same radius length 1. In the area we are describing, a <i>quarter</i> of the unit circle is inscribed</p>
@@ -10,7 +11,7 @@ Monte Carlo simulations to estimate the value of pi in several languages (Includ
 <p><b>POINTS_IN_CIRCLE:TOTAL_POINTS ~= pi/4:1</b></p>
 <p>Or equivalently:</p>
 <p><b>pi ~= 4*(POINTS_IN_CIRCLE/TOTAL_POINTS)</b></p>
-<p><b>SO</b>, the number of random points (X, Y) chosen to get a final estimate is the maximum number of <i>iterations</i> of the program.</p>
+<p>So, for every iteration, we will have to draw two random numbers to create a point (X,Y), then we will check to see if this point lies within our inscribed quarter-unit circle. Keeping track of how many points "hit the target" and the total number of points, we can estimate pi with the above formula using a <i>very</i> large number of random (X,Y) points (on the order of 10<sup>9</sup>).</p>
 
 <h3>piestimate.c</h3>
 
@@ -28,15 +29,15 @@ Monte Carlo simulations to estimate the value of pi in several languages (Includ
   Note that Python is <i><b>much</b></i> slower than C and especially Julia. Thus, the number of iterations is  much lower.</p>
 
 <h3>piestimate.jl</h3>
-<p>Note that you will need the Julia REPL to run this script. In the terminal, check with</p>
+<p>Note that you will need to install Julia to run this script. In the terminal, check with</p>
 
 <code>julia --version</code>
 
-<p>to see if you have Julia installed. If you do, simply run the file with</p>
+<p>to see if you have Julia installed. Once you do, simply run the file with</p>
 
 <code>julia piestimate.jl</code>
 
 <p>while in the directory where the file is located.<br>
-Note how the speed boost, even compared to the parallel program in C!</p>
+Amazing how quickly the program runs, even compared to the parallel program in C!</p>
 
 
