@@ -3,7 +3,7 @@ MAX_ITER = 1_500_000_000
 hit_count = 0
 iter_count = 0
 
-for i ∈ 1:MAX_ITER
+@time for i ∈ 1:MAX_ITER
     x = rand()
     y = rand()
     iter_count += 1
