@@ -5,6 +5,7 @@ MAX_ITER = 50_000_000
 hit_count = 0
 iter_count = 0
 
+print('Estimating the value for pi with Monte Carlo integration.')
 start = time()
 for i in range(MAX_ITER):
     x = random()

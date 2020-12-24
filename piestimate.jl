@@ -3,6 +3,7 @@ MAX_ITER = 1_500_000_000
 hit_count = 0
 iter_count = 0
 
+println("Estimating the value for pi with Monte Carlo integration.")
 @time for i ∈ 1:MAX_ITER
     x = rand()
     y = rand()
